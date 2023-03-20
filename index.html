@@ -19,28 +19,29 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <main>
-      <!-- ЗНАКОМСТВО и ШАПКА В БУДЩЕМ -->
-      <div class="about">
-        <header>
-          <nav>
-            <a href="#" class="name">KOLENKIN</a>
-            <ul>
-              <li class="nav__item"><a href="#projects">проекты</a></li>
-              <li class="nav__item"><a href="#abilities">компетенции</a></li>
-              <li class="nav__item"><a href="#skills">УСЛУГИ</a></li>
-              <li class="nav__item"><a href="#contacts">КОНТАКТЫ</a></li>
-            </ul>
-          </nav>
-          <p>
-            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
-            повышают престиж компании и позволяют выделиться на фоне конкурентов
-          </p>
-          <h1>Привет, я Женя — фронтенд разработчик и дизайнер сайтов</h1>
-        </header>
+    <!-- ШАПКА -->
+    <header>
+      <nav>
+        <a href="#" class="logo">KOLENKIN</a>
+        <ul>
+          <li class="nav__item"><a href="#projects">проекты</a></li>
+          <li class="nav__item"><a href="#abilities">компетенции</a></li>
+          <li class="nav__item"><a href="#skills">УСЛУГИ</a></li>
+          <li class="nav__item"><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <div class="header__data">
+        <p>
+          Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+          повышают престиж компании и позволяют выделиться на фоне конкурентов
+        </p>
+        <h1>Привет, я Женя — фронтенд разработчик и дизайнер сайтов</h1>
       </div>
+    </header>
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
       <!-- ПРОЕКТЫ С КНОПКОЙ-->
-      <div class="projects" id="projects">
+      <section class="projects" id="projects">
         <h2>Самые свежие проекты</h2>
         <!-- МЕТРИКА  -->
         <div class="project__item metrica">
@@ -67,9 +68,9 @@
           >
         </div>
         <button>Смотреть все проекты</button>
-      </div>
+      </section>
       <!-- КОМПЕТЕНЦИИ  -->
-      <div class="abilities" id="abilities">
+      <section class="abilities" id="abilities">
         <h2>Мои компетенции</h2>
         <!-- HTML CSS  -->
         <div class="abilities__item">
@@ -124,9 +125,9 @@
             автоматически подстраивающийся под размер экрана пользователя.
           </p>
         </div>
-      </div>
+      </section>
       <!-- CПЕКТР ЗАДАЧ  -->
-      <div class="skills" id="skills">
+      <section class="skills" id="skills">
         <h3>Помогаю реализовать широкий спектр задач</h3>
         <div class="skills__item">
           <img src="resources/skills-1.png" alt="" />
@@ -163,9 +164,9 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
       <!-- КОНТАКТЫ -->
-      <div class="contacts" id="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__data">
           <p>для связи:</p>
           <div class="contacts__link">
@@ -183,16 +184,16 @@
             >
           </div>
         </div>
-      </div>
-      <!-- FOOTER -->
-      <footer>
-        <div class="footer__data">
-          <p class="footer__title">
-            Портфолио фронтенд-разработчика Жени Коленкина
-          </p>
-          <p class="footer__rights">Все права защищены. 2023</p>
-        </div>
-      </footer>
+      </section>
     </main>
+    <!-- ПОДВАЛ -->
+    <footer>
+      <div class="footer__data">
+        <p class="footer__title">
+          Портфолио фронтенд-разработчика Жени Коленкина
+        </p>
+        <p class="footer__rights">Все права защищены. 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
