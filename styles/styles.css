@@ -60,7 +60,7 @@ a {
   color: #ffffff;
 }
 
-/* ========ХЕДДЕР========  */
+/* ========ШАПКА========  */
 
 header {
   position: relative;
@@ -111,14 +111,14 @@ nav {
   font-size: 42.4138px;
   letter-spacing: -0.07em;
   text-transform: uppercase;
-  background-color: var(--main__color);
+  background-color: var(--title__color__alt);
   width: 202px;
   border-radius: 100px;
   padding-left: 9px;
 }
 
 .logo:hover {
-  background-color: var(--title__color__alt);
+  background-color: var(--main__color);
 }
 
 .nav__item {
@@ -147,7 +147,7 @@ nav {
   border-radius: 100px;
 }
 
-/* ========MAIN=======  */
+/* ========ОСНОВНОЙ КОНТЕНТ=======  */
 
 main {
   background-color: var(--main__color);
