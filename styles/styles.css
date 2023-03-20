@@ -91,7 +91,6 @@ header::after {
 
 header p {
   width: 430px;
-  margin-top: 252px;
 }
 
 nav,
@@ -239,10 +238,6 @@ button:hover {
 }
 
 /* ========КОМПЕТЕНЦИИ=======  */
-
-.abilities {
-  margin-top: 150px;
-}
 
 .abilities h2 {
   margin-bottom: 48px;
