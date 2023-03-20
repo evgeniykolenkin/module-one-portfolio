@@ -8,7 +8,7 @@ body {
   min-width: 1400px;
 }
 
-/* ЦВЕТА */
+/* ========ЦВЕТА========= */
 
 :root {
   --main__color: #448d76;
@@ -18,45 +18,40 @@ body {
   --text__color__alt: #14b884;
 }
 
-main {
-  background-color: var(--main__color);
-  max-width: 1400px;
-  margin: 0 auto;
+/* ========ОБЩИЕ СВОЙСТВА=======  */
+
+h1,
+h2,
+h3,
+p {
+  font-weight: 400;
+  letter-spacing: -0.03em;
 }
 
 h1 {
   width: 919px;
   margin-top: 29px;
-  padding-bottom: 94px;
-  font-weight: 400;
   font-size: 80px;
   line-height: 70px;
-  letter-spacing: -0.03em;
-  color: #fd4d0c;
+  color: var(--title__color__alt);
 }
 
 h2 {
   margin-bottom: 40px;
-  font-weight: 400;
   font-size: 55px;
   line-height: 72px;
-  letter-spacing: -0.03em;
   color: var(--title__color);
 }
 
 h3 {
   color: #ffffff;
-  font-weight: 400;
   font-size: 35px;
   line-height: 46px;
-  letter-spacing: -0.03em;
 }
 
 p {
-  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  letter-spacing: -0.03em;
   color: var(--text__color);
 }
 
@@ -65,17 +60,21 @@ a {
   color: #ffffff;
 }
 
-/* ЗНАКОМСТВО И ШАПКА  */
+/* ========ХЕДДЕР========  */
 
-.about {
+header {
   position: relative;
+  width: 1400px;
+  height: 681px;
+  margin: auto;
+  padding-top: 29px;
   background: url(../resources/main-photo.jpg);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.about::after {
+header::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -84,19 +83,30 @@ a {
   background: linear-gradient(to top, #448d76, transparent);
 }
 
-header {
-  width: 1153px;
-  margin: auto;
-  padding-top: 29px;
+.header__data {
+  position: absolute;
+  left: 125px;
+  bottom: 90px;
+}
+
+header p {
+  width: 430px;
+  margin-top: 252px;
+}
+
+nav,
+nav ul {
+  display: flex;
 }
 
 nav {
-  display: flex;
+  width: 1153px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
 
-.name {
+.logo {
   box-sizing: border-box;
   font-weight: 700;
   font-size: 42.4138px;
@@ -108,12 +118,8 @@ nav {
   padding-left: 9px;
 }
 
-.name:hover {
+.logo:hover {
   background-color: var(--title__color__alt);
-}
-
-nav ul {
-  display: flex;
 }
 
 .nav__item {
@@ -142,18 +148,23 @@ nav ul {
   border-radius: 100px;
 }
 
-header p {
-  width: 430px;
-  margin-top: 252px;
+/* ========MAIN=======  */
+
+main {
+  background-color: var(--main__color);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 150px;
 }
 
-/* ПРОЕКТЫ  */
+/* ========ПРОЕКТЫ=======  */
 
 .projects,
 .abilities,
 .skills {
   width: 1150px;
-  margin: 150px auto 0;
+  padding-top: 150px;
+  margin: 0 auto;
 }
 
 .project__item {
@@ -203,6 +214,9 @@ header p {
 .project__item a:hover {
   color: var(--title__color__alt);
 }
+
+/* ========КНОПКА=======  */
+
 button {
   display: block;
   width: 582px;
@@ -223,6 +237,8 @@ button:hover {
   background-color: var(--text__color);
   color: var(--title__color__alt);
 }
+
+/* ========КОМПЕТЕНЦИИ=======  */
 
 .abilities {
   margin-top: 150px;
@@ -249,6 +265,8 @@ button:hover {
   background-color: var(--title__color__alt);
   border-radius: 10px;
 }
+
+/* ========НАВЫКИ=======  */
 
 .skills h3 {
   width: 403px;
@@ -279,6 +297,8 @@ button:hover {
 .skills__item img {
   border-radius: 30px;
 }
+
+/* ========КОНТАКТЫ=======  */
 
 .contacts {
   position: relative;
@@ -326,8 +346,11 @@ button:hover {
   letter-spacing: -0.03em;
 }
 
+/* ========ФУТЕР=======  */
+
 footer {
-  margin-top: 150px;
+  width: 1400px;
+  margin: -25px auto;
   background: var(--text__color);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
